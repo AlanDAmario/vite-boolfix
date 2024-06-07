@@ -8,24 +8,13 @@ export default {
       store,
     };
   },
-  created() {
-    this.apiCall();
-  },
-  methods: {
-    apiCall() {
-      const params = {};
-
-      axios.get(store.apiUrl, { params }).then((response) => {});
-    },
-  },
-  components: {},
 };
 </script>
 
 <template>
-  <main>
-    <h1>Main</h1>
-  </main>
+  <div class="container">
+    <main></main>
+  </div>
 </template>
 
 <style lang="scss" scoped></style>
