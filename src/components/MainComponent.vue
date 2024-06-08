@@ -1,8 +1,12 @@
 <script>
 import axios from "axios";
 import { store } from "../store";
+import MovieList from "./MovieList.vue";
 export default {
   name: "MainComponent",
+  components: {
+    MovieList,
+  },
   data() {
     return {
       store,
@@ -13,7 +17,9 @@ export default {
 
 <template>
   <div class="container">
-    <main></main>
+    <main>
+      <MovieList />
+    </main>
   </div>
 </template>
 
